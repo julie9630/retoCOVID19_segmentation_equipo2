@@ -155,10 +155,3 @@ def dice_coefficient(pred, target, num_classes=4, eps=1e-6):
 - Ronneberger et al. "U-Net: Convolutional Networks for Biomedical Image Segmentation" (MICCAI 2015).
 - Documentación PyTorch: https://pytorch.org/
 
-## Licencia
-
-(Si aplica, añade aquí tipo de licencia; p.ej. MIT, CC-BY, etc.)
-
----
-
-Si necesitas que separe el código en módulos o agreguemos métricas adicionales, pídelo y continúo con la refactorización.
