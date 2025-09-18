@@ -9,8 +9,8 @@ Proyecto (notebook) para segmentar lesiones en cortes de tomografía (CT) relaci
 ## Equipo
 
 - Imanol Muñiz Ramirez A01701713
-- Julieta Itzel Pichardo Meza
-- Paul Park
+- Julieta Itzel Pichardo Meza A01369630
+- Paul Park A01709885
 - Rodrigo Antonio Benítez De La Portilla A01771433
 - Carlos Iván Fonseca Mondragón A01771689
 
@@ -150,8 +150,45 @@ def dice_coefficient(pred, target, num_classes=4, eps=1e-6):
 - Guardar el modelo: `torch.save(model.state_dict(), 'unet_covid.pth')`.
 - Añadir script `predict.py` para generar máscaras y CSV sin necesidad de ejecutar todo el notebook.
 
+
+
+
+
+
+## Normatividad del reto
+
+Este proyecto fue desarrollado en el marco del curso **Inteligencia Artificial Avanzada para la Ciencia de Datos I**, en el Tecnológico de Monterrey, utilizando el dataset provisto en la competencia abierta de Kaggle “COVID-19 CT Segmentation Dataset”.
+
+La normatividad aplicable se basa en los siguientes puntos:
+
+### Contexto del Dataset
+
+El conjunto de datos fue publicado por el equipo de [medicalsegmentation.com](https://medicalsegmentation.com), conformado por radiólogos que recolectaron y segmentaron imágenes CT de pacientes con COVID-19. Estas imágenes fueron extraídas de fuentes públicas y convertidas a un formato útil para el entrenamiento de modelos de IA. Todas las imágenes están anonimizadas.
+
+Una contribución adicional fue realizada por **Johannes Hofmanninger**, quien compartió máscaras pulmonares segmentadas en su repositorio de GitHub.
+
+### Consideraciones éticas y legales
+
+- **Anonimización**: Las imágenes no contienen metadatos ni identificadores personales.
+- **Uso educativo**: El dataset fue publicado para fines académicos, de investigación y desarrollo.
+- **Cumplimiento legal**: El trabajo respeta principios de la *Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados* (México) y buenas prácticas internacionales.
+- **Ética en IA médica**: El modelo propuesto no sustituye un diagnóstico médico y no debe utilizarse con fines clínicos. Se alinea con principios como:
+  - Beneficencia y no maleficencia
+  - Transparencia y reproducibilidad
+  - Responsabilidad y respeto por la privacidad
+
+### Reglas del entorno de Kaggle
+
+La competencia no fue oficial ni con premios; sin embargo, promovía valores de integridad académica como:
+
+- No hacer trampa
+- Aplicarse al máximo
+- Divertirse
+- Compartir el código
+
 ## Cita / Referencias
 
 - Ronneberger et al. "U-Net: Convolutional Networks for Biomedical Image Segmentation" (MICCAI 2015).
 - Documentación PyTorch: https://pytorch.org/
+
 
